@@ -1,0 +1,82 @@
+html, body {
+	padding: 20px;
+}
+
+hr {
+	margin-top: 25px;
+}
+
+h2 {
+	margin-left: 50px;
+}
+
+.flex {
+	display: flex;
+}
+
+.tuning {
+	animation: clignote 3s infinite;
+}
+
+label {
+	display: block;
+	widows: 400px;
+	margin-bottom: 15px;
+}
+
+label p {
+	width: 175px;
+	display: inline-block;
+}
+
+label input {
+	width: 200px;
+	text-align: left;
+}
+
+.submit {
+	padding: 10px;
+	border-radius: 30%;
+}
+.submit:focus {
+	outline: none;
+}
+
+#resultat {
+	display: flex;
+	align-items: center;
+	margin-top: -30px;
+	margin-left: 50px;
+}
+
+a {
+	color: green;
+	margin-top: 50px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 60px;
+}
+
+img {
+	position: fixed;
+	right: 0;
+	width: 15%;
+	z-index: -1;
+	animation: mouve 3s infinite;
+}
+
+@keyframes clignote {
+	0%   { color:red; }
+	25%  { color:green; }
+	50%  { color:yellow; }
+	75%  { color:blue; }
+	100% { color:pink; }
+}
+
+@keyframes mouve {
+	0% { top: 0px; transform: rotate(240deg);}
+	50% { top: 75vh; transform: rotate(360deg); }
+	100% { top: 0px; transform: rotate(240deg);}
+}
