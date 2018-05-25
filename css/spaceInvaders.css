@@ -1,0 +1,9 @@
+body {
+	background-image: url(../img/back.png);
+	background-size: cover;
+}
+
+#content {
+	display: flex;
+	justify-content: center;
+}
